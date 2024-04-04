@@ -33,6 +33,7 @@ app.get("/api/products", async (req, res) => {
   }
 });
 
+// Add a product
 app.post("/api/products", async (req, res) => {
   try {
     const newProduct = new Product(req.body);
